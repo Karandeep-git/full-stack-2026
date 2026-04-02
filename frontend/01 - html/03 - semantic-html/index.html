@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phase 03: Semantic HTML</title>
+
+    <style>
+        .highlight {
+            background-color: palevioletred;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 3. <header> — The Top Section -->
+    <header>
+        <h1>Arjun's Portfolio</h1>
+        <p>Full Stack Developer from Ludhiana</p>
+    </header>
+
+    <!-- 4. <nav> — Navigation Links -->
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Navigation with a list (the most common real-world pattern): -->
+    <!-- <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav> -->
+
+    <!-- 5. <main> — The Main Content -->
+    <main>
+        <h2>Welcome to my Portfolio</h2>
+        <p>Here you will find all my projects and skills.</p>
+    </main>
+
+    <!-- 6. <section> — Thematic Groups of Content -->
+    <main>
+        <section>
+            <h2>About Me</h2>
+            <p>I am a developer from Ludhiana learning full stack development.</p>
+        </section>
+        <section>
+            <h2>My Skills</h2>
+            <p>HTML, CSS, JavaScript, React, Node.js</p>
+        </section>
+        <section>
+            <h2>My Projects</h2>
+            <p>Coming soon...</p>
+        </section>
+    </main>
+
+    <!-- 7. <article> — Self-Contained, Standalone Content -->
+    <article>
+        <h2>How I Learned HTML in 7 Days</h2>
+        <p>By Arjun | March 2026</p>
+        <p>HTML is the foundation of every website. I started with...</p>
+    </article>
+
+    <!-- 8. <aside> — Sidebar or Secondary Content -->
+    <aside>
+        <h3>Related Articles</h3>
+        <ul>
+            <li><a href="#">Learn CSS Next</a></li>
+            <li><a href="#">JavaScript Basics</a></li>
+        </ul>
+    </aside>
+
+    <!-- 9. <footer> — The Bottom Section -->
+    <footer>
+        <p>&copy; 2026 Arjun. All rights reserved.</p>
+        <nav>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </nav>
+    </footer>
+
+    <!-- 10. Other Important Semantic Tags -->
+    <figure>
+        <img src="assets/pic.jpg" alt="" width="300">
+        <figcaption>My first HTML project - a personal portfolio page</figcaption>
+    </figure>
+
+    <p>I started learning HTML on <time datetime="2026-3-1">March 1, 2026</time></p>
+    <p>My class starts at <time datetime="18:00">6:00 PM</time></p>
+
+    <address>
+        <p>Arjun Kumar</p>
+        <p>Ludhiana, Punjab, India</p>
+        <p><a href="mailto:arjun@gmail.com">arjun@gmail.com</a></p>
+    </address>
+    <blockquote cite="https://www.source.com">
+        <p>The best way to learn programming is to build real projects.</p>
+        <cite>Famous Developer</cite>
+    </blockquote>
+
+    <!-- Inline code inside a sentence -->
+    <p>Use the <code>color</code> property in CSS to change text color.</p>
+
+    <!-- Block of code — preserves spacing and line breaks -->
+    <pre>
+        <code>
+            function greet() {
+                console.log("Hello World");
+            }
+        </code>
+     </pre>
+
+    <!-- <mark> — Highlighted/Relevant Text -->
+    <p>In this tutorial, the most important concept is
+        <mark>semantic HTML</mark> which improves SEO and accessibility.
+    </p>
+
+    <!-- <abbr> — Abbreviations -->
+        <p>I am learning <abbr title="HyperText Markup Language">HTML</abbr>
+        and <abbr title="Cascading Style Sheets">CSS</abbr></p>
+
+        <details>
+            <summary>What is HTML?</summary>
+            <p>HTML stands for HyperText Markup Language. It is the standard 
+                language for creating web pages and defines the structure of
+                web content.
+            </p>
+        </details>
+
+        <details>
+            <summary>What is CSS?</summary>
+            <p>CSS stands for Cascading Style Sheets. It is used to style 
+                and visually design HTML elements.
+            </p>
+        </details>
+
+         <!-- Use div only when no semantic tag fits - 
+          Block level — takes up full width, starts on a new line -->
+          <div class="card">
+            <h3>Project Title</h3>
+            <p>Project description here.</p>
+          </div>
+
+          <!-- <span> — Generic Inline Container -
+            Inline — sits within text, takes only as much width as its content -->
+            <p>My name is <span class="highlight">Arjun</span> and I am from 
+            <span class="city">Ludhiana</span>.</p>
+
+          
+
+</body>
+
+</html>
