@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me </title>
+</head>
+<body>
+
+    <h1>Contact Form</h1>
+    <p>Fill out the form below and I'll get back to you.</p>
+
+    <!-- Navigation using links -->
+     <nav>
+        <a href="index.html">Home</a>
+        <a href="#form">Jump to Form</a>
+        <a href="mailto:you@gmail.com">Email Me</a>
+     </nav>
+
+     <hr>
+
+     <img src="assets/pic.jpg" alt="Profile photo" width="300">
+
+     <hr>
+
+     <h2>Technologies I'm Learning</h2>
+     <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript
+            <ul>
+                <li>React.js</li>
+                <li>Node.js</li>
+            </ul>
+        </li>
+        <li>MongoDB</li>
+     </ul>
+
+     <h2>My Learning Progress</h2>
+     <table border="1">
+        <thead>
+            <tr>
+                <th>Technology</th>
+                <th>Status</th>
+                <th>Progress</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>HTML</td>
+                <td>In Progress</td>
+                <td>Phase 2 of 6</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Up Next</td>
+                <td>Not Started</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Upcoming</td>
+                <td>Not started</td>
+            </tr>
+        </tbody>
+     </table>
+
+     <h2 id="form">Send Me a Message</h2>
+     <form action="/submit" method="POST">
+
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Your full name" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" placeholder="your@example.com" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210"><br><br>
+
+        <label for="subject">Subject:</label><br>
+        <select name="subject" id="subject">
+            <option value="">-- Select a subject --</option>
+            <option value="collaboration">Project Collaboration</option>
+            <option value="job">Job Opportunity</option>
+            <option value="question">General Question</option>
+        </select><br><br>
+
+        <p>Your Skills: </p>
+        <input type="checkbox" id="chk-html" name="skills" value="html">
+        <label for="chk-html">HTML</label>
+
+        <input type="checkbox" id="chk-css" name="skills" value="css">
+        <label for="chk-css">CSS</label>
+
+        <input type="checkbox" id="chk-js" name="skills" value="js">
+        <label for="chk-js">JavaScript</label><br><br>
+
+        <p>Exterience Level:</p>
+        <input type="radio" id="rad-begineer" name="level" value="begineer">
+        <label for="rad-begineer">Begineer</label><br><br>
+
+        <input type="radio" id="rad-mid" name="level" value="intermediate">
+        <label for="rad-mid">Intermediate</label><br><br>
+
+        <input type="radio" id="rad-senior" name="level" value="senior">
+        <label for="rad-senior">Senior</label><br><br>
+
+        <label for="message">Your Message: </label><br>
+        <textarea name="message" id="message" rows="5" cols="40"
+        placeholder="Write your message here..." required></textarea><br><br>
+
+        <label for="resume">Attach Resume (Optional):</label><br>
+        <input type="file" id="resume" accept=".pdf"><br><br>
+
+        <input type="checkbox" id="agree" name="agree" required>
+        <label for="agree">I agree to the terms and conditions</label><br><br>
+
+        <button type="submit">Send Message</button>
+        <button type="reset">Clear Form</button>
+     </form>
+    
+</body>
+</html>
