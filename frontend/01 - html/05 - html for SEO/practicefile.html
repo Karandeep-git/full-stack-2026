@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Encoding and viewport — always first -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO essentials -->
+    <title>HTML Beginner's Guide — Learn HTML from Scratch | Arjun's Blog</title>
+    <meta name="description"
+        content="Master HTML from scratch with this complete guide. Learn tags, forms, semantic HTML, accessibility, and SEO. Includes real projects and senior developer tips.">
+    <meta name="author" content="Arjun Kumar">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://arjunblog.com/html-guide">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="HTML Beginner's Guide — Learn HTML from Scratch">
+    <meta property="og:description" content="Master HTML with real projects and senior developer tips.">
+    <meta property="og:image" content="https://arjunblog.com/images/html-guide.jpg">
+    <meta property="og:url" content="https://arjunblog.com/html-guide">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="Arjun's Dev Blog">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="HTML Beginner's Guide">
+    <meta name="twitter:description" content="Master HTML with real projects and senior developer tips.">
+    <meta name="twitter:image" content="https://arjunblog.com/images/html-guide.jpg">
+
+    <!-- Theme color -->
+    <meta name="theme-color" content="#ff6b35">
+</head>
+
+<body>
+
+    <!-- Skip navigation — for keyboard users -->
+    <a href="#main-content">Skip to main content</a>
+
+    <!-- Site header -->
+    <header>
+        <h1>Arjun's Dev Blog</h1>
+        <p>Learning Full Stack Development — documenting every step</p>
+    </header>
+
+    <!-- Main navigation -->
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">View my projects</a></li>
+            <li><a href="about.html">About Arjun</a></li>
+            <li><a href="contact.html">Contact me</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content -->
+    <main id="main-content">
+
+        <article>
+            <!-- Article header -->
+            <header>
+                <h2>HTML Beginner's Guide — Everything You Need to Know</h2>
+                <p>By <strong>Arjun Kumar</strong> |
+                    Published: <time datetime="2026-03-11">March 11, 2026</time>
+                </p>
+            </header>
+
+            <!-- Section 1 -->
+            <section>
+                <h3>What is HTML?</h3>
+                <p>
+                    <abbr title="HyperText Markup Language">HTML</abbr> is the
+                    standard language for building web pages. Every website you
+                    have ever visited is built on HTML.
+                </p>
+
+                <!-- Image with proper alt, SEO filename -->
+                <figure>
+                    <img src="html-structure-diagram.png"
+                        alt="Diagram showing HTML document structure with html, head, and body tags" width="600"
+                        height="400">
+                    <figcaption>The basic structure of every HTML document</figcaption>
+                </figure>
+            </section>
+
+            <!-- Section 2 -->
+            <section>
+                <h3>Why Learn HTML in 2026?</h3>
+                <p>HTML is still the foundation of every website.
+                    Before learning any framework, you must master HTML.</p>
+
+                <ul>
+                    <li>Required for all web development jobs</li>
+                    <li>Foundation for CSS and JavaScript</li>
+                    <li>Works in every browser on every device</li>
+                </ul>
+            </section>
+
+            <!-- Section 3 with accessible form -->
+            <section>
+                <h3>Get My Free HTML Cheatsheet</h3>
+
+                <form action="/subscribe" method="POST">
+
+                    <label for="sub-name">Your Name</label>
+                    <input type="text" id="sub-name" name="name" placeholder="Arjun Kumar" required
+                        aria-required="true">
+
+                    <label for="sub-email">Email Address</label>
+                    <input type="email" id="sub-email" name="email" placeholder="arjun@email.com" required
+                        aria-required="true" aria-describedby="email-hint">
+                    <p id="email-hint">
+                        <small>Your email is safe. No spam, ever.</small>
+                    </p>
+
+                    <button type="submit" aria-label="Subscribe and get free HTML cheatsheet">
+                        Get Free Cheatsheet
+                    </button>
+
+                </form>
+            </section>
+
+            <!-- Article footer -->
+            <footer>
+                <p>Found this helpful?
+                    <a href="https://twitter.com/share" target="_blank" aria-label="Share this HTML guide on Twitter">
+                        Share it on Twitter
+                    </a>
+                </p>
+                <address>
+                    Written by <a href="about.html">Arjun Kumar</a>,
+                    Full Stack Developer from Ludhiana, Punjab.
+                </address>
+            </footer>
+
+        </article>
+
+    </main>
+
+    <!-- Sidebar -->
+    <aside aria-label="Related content">
+        <h3>Continue Learning</h3>
+        <nav aria-label="Series navigation">
+            <ul>
+                <li><a href="phase1.html">Phase 1: HTML Foundations</a></li>
+                <li><a href="phase2.html">Phase 2: Core Building Blocks</a></li>
+                <li><a href="phase3.html">Phase 3: Semantic HTML</a></li>
+                <li><a href="phase4.html">Phase 4: Multimedia</a></li>
+                <li><strong>Phase 5: SEO and Accessibility ← You are here</strong></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Site footer -->
+    <footer>
+        <nav aria-label="Footer navigation">
+            <a href="privacy.html">Privacy Policy</a> |
+            <a href="sitemap.html">Sitemap</a> |
+            <a href="contact.html">Contact</a>
+        </nav>
+        <p>
+            <small>&copy; 2026 Arjun's Dev Blog. All rights reserved.</small>
+        </p>
+    </footer>
+
+</body>
+
+</html>
