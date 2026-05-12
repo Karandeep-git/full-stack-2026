@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topic 2 - CSS Colors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>CSS Color Systems</h1>
+
+    <section>
+        <h2>1. Named Colors</h2>
+
+        <p class="named-red">
+            This text uses the anmed color "red" - simple English word, browser knows it.
+        </p>
+
+        <p class="named-tomato">
+            This uses "tomato" - a slightly orange-red. There are 140 named colors in CSS.
+        </p>
+
+        <div class="named-bg-demo">
+            This div has a "steelblue" background and "white text" - both named colors.
+        </div>
+    </section>
+
+    <section>
+        <h2>2. Hex Colors</h2>
+
+        <p class="hex-text">
+            This text is colored using a hex code - #E74C37 - a professional crimson red.
+        </p>
+
+        <div class="hex-bg-demo">
+            This div uses hex code #2C3E50 as background - a deep dark blue-grey used by many professional apps.
+        </div>
+
+        <div class="hex-shorthand-demo">
+            Hex shorthand: #333 is the same as #333333 - dark grey.
+            Only works when both charcters in each pair are identical.
+        </div>
+    </section>
+
+    <section>
+        <h2>3. RGB Colors</h2>
+
+        <p class="rgb-text">
+            This text uses rgb(41, 128, 185) - a clean medium blue defined by red=41, green=128, blue=185.
+        </p>
+
+        <div class="rgb-bg-demo">
+            This background uses rgb(39, 174, 96) - Groww-style green.
+            Full control over each color channel.
+        </div>
+    </section>
+
+    <section>
+        <h2>4. RGBA - RGBA with Transparency</h2>
+
+        <div class="rgba-container">
+
+            <div class="rgba-high-opacity">
+                rgba background at 0.9 opacity - almost fully solid.
+            </div>
+
+            <div class="rgba-medium-opacity">
+                rgba background at 0.5 opacity - half transparent, background show through
+            </div>
+
+            <div class="rgba-low-opacity">
+                rgba background at 0.2 opacity - mostly transparent
+            </div>
+        </div>
+
+        <p class="rgba-text-demo">
+            This text color itself uses rgba - rgba(231, 76, 60, 0.6) - a semi-transparent red text.
+        </p>
+    </section>
+
+    <section>
+        <h2>5. HSL Colors</h2>
+
+        <div class="hsl-demo-red">
+            hsl(0, 100%, 50%) - Pure red. Hue=0 means red on the color wheel.
+        </div>
+
+        <div class="hsl-demo-green">
+            hsl(120, 100%, 35%) - Deep green. Hue=120 means green on the color wheel.
+        </div>
+
+        <div class="hsl-demo-blue">
+            hsl(240, 100%, 60%) - Bright blue. Hue=240 means blue on the color wheel.
+        </div>
+
+        <div class="hsl-demo-muted">
+            hsl(240, 30%, 60%) - Muted blue. Lower saturation = more grey mixed in.
+        </div>
+
+        <div class="hsl-demo-light">
+            hsl(240, 100%, 85%) - Light blue. Higher lightness = closer to white.
+        </div>
+    </section>
+
+    <section>
+        <h2>6. The opacity Property</h2>
+
+        <div class="opacity-full">
+            opacity: 1.0 - fully visible. Text AND background are fully solid.
+        </div>
+
+        <div class="opacity-half">
+            opacity: 0.5 - the ENTIRE element is 50% transparent. 
+            Notice the text is also faded - this is different from rgba.
+        </div>
+
+        <div class="opacity-low">
+            opacity: 0.2 - barely visible. Everything inside is faded.
+        </div>
+    </section>
+
+    <section>
+        <h2>7. opacity vs rgba - The Critical Difference</h2>
+
+        <div class="comparison-container">
+
+            <div class="using-opacity">
+                <strong>Using opacity: 0.4</strong>
+                <p>The text inside is also faded because opacity affects the ENTIRE element including all its children.</p>
+            </div>
+
+            <div class="using-rgba">
+                <strong>Using rgba background</strong>
+                <p>This text is fully solid and readable because only the background-color is transparent - not the whole element.</p>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
