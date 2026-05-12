@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topic 3 - Text and Fonts</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@400;700;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <h1>Text and Font Properties in CSS</h1>
+
+    <section>
+        <h2>1. Font-family</h2>
+
+        <p class="font-serif">
+            This text uses a SERIF font - "Playfair Display" from Google Fonts.
+            Serif fonts have small decoractive strokes at the ends of letters.
+            Used for elegant, editiorial, or classic designs.
+        </p>
+
+        <p class="font-sans">
+            This text uses a SANS-SERIF font - "Inter" from Google Fonts.
+            Sans-serif fonts have clean, straight edges with no decorative strokes.
+            Used for modern UI, apps and dashboards. Most websites use sans-serif.
+        </p>
+
+        <p class="font-mono">
+            This text uses a MONOSPACE font - "Cuourier New".
+            Every character is exactly the same width.
+            Used for code editiors, terminals and displaying code.
+        </p>
+
+        <p class="font-stack-demo">
+            This text uses a font stack - Arial is tried first, then Helvetica Neue, then Helvetica, 
+            then ay sans-serif the system has. This is professional way to ensure your design works on every device.
+        </p>
+    </section>
+
+    <section>
+        <h2>2. Font-size</h2>
+
+        <p class="size-12">font-size: 12px - very small, used for footnotes and captions</p>
+        <p class="size-16">font-size: 16px - the browser default body text size</p>
+        <p class="size-20">font-size: 20px - slightly larger, good for lead paragraphs</p>
+        <p class="size-28">font-size: 28px - heading-level size</p>
+        <p class="size-48">font-size: 48px - hero/display text</p>
+
+        <div class="size-units-demo">
+            <p class="size-px">font-size: 18px - fixed pixel size, never changes</p>
+            <p class="size-rem">font-size: 1.125rem - relative to the root (html) font size</p>
+            <p class="size-em">font-size: 1.2em - relative to the PARENT element's font-size</p>
+            <p class="size-percent">font-size: 120% - 120% of the parent element's font size</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>3. font-weight</h2>
+
+        <p class="weight-100">font-weight: 100 - Thin (requires a font that supports it)</p>
+        <p class="weight-300">font-weight: 300 - Light</p>
+        <p class="weight-400">font-weight: 400 - Normal (same as "normal")</p>
+        <p class="weight-600">font-weight: 600 - Semi-Bold</p>
+        <p class="weight-700">font-weight: 700 - Bold (same as "bold")</p>
+        <p class="weight-900">font-weight: 900 - Black / Extra Bold</p>
+    </section>
+
+    <section>
+        <h2>4. font-style</h2>
+
+        <p class="style-normal">font-style: normal - upright text, this is the default</p>
+        <p class="style-italic">font-style: italic - slandted text, used for emphasis, quotes or captions</p>
+    </section>
+
+    <section>
+        <h2>5. line-height</h2>
+
+        <div class="line-height-demo-container">
+
+            <div class="line-tight">
+                <strong>line-height: 1.0 - Too tight:</strong>
+                <p>
+                    This paragraph has very tight line spacing. When text lines are this close
+                    together, the human eye struggles to track from the end of one line to the start of the next.
+                    Reading beocmes slow and tiring.
+                </p>
+            </div>
+
+            <div class="line-normal">
+                <strong>line-height: 1.5 Comfortable (recommended):</strong>
+                <p>
+                    This paragraph has the recommended line height.
+                    The 1.5 value means each line's box is 1.5 times the font size tall.
+                    This gives text room to breathe and makes long paragraphs much more comfortable to read.
+                </p>
+            </div>
+
+            <div class="line-loose">
+                <strong>line-height: 2.2 - Too loose:</strong>
+                <p>
+                    This paragraph has very loose line spacing. The lines feel disconnected from each other
+                    and reading becomes awkward because the eye has too much empty space to jump across between lines.
+                </p>
+            </div>
+        </div>
+
+        <div class="line-height-center-trick">
+            Single line vertically centered using line-height equal to container height
+        </div>
+    </section>
+
+    <section>
+        <h2>6. text-align</h2>
+
+        <p class="align-left">
+            text-align: left - text starts from the left edge.
+            This is the default for left-to-right languages like English.
+            Best for body text because the eye always knows where the next line starts.
+        </p>
+
+        <p class="align-center">
+            text-align: center - text is centered horizontally. 
+            Best for headings, short titles, and hero text.
+            Avoid centering long paragraphs - hard to read.
+        </p>
+
+        <p class="align-right">
+            text-align: right - text starts from right edge. 
+            Used for prices in tables, timestamps and right-to-left language support.
+        </p>
+
+        <p class="align-justify">
+            text-align: justify - both left and right edges are perfectly straight,
+            like a newspaper or book. The browser adds extra space between words to achieve this.
+            Be careful - it can create awkward gaps int short lines or narrow containers.
+        </p>
+    </section>
+
+    <section>
+        <h2>7. letter-spacing</h2>
+
+        <p class="spacing-negative">letter-spacing: -1px - characters are pushed closer together</p>
+        <p class="spacing-normal">letter-spacing: 0 - default, no extra spacing between characters</p>
+        <p class="spacing-small">letter-spacing: 1px - very slight brathing room between characters</p>
+        <p class="spacing-medium">letter-spacing: 3px - noticeable spacing, modern UI feel</p>
+        <p class="spacing-large">letter-spacing: 6px - wide spacing, often used for uppercase labels</p>
+
+        <div class="label-demo">CATEGORY LABEL</div>
+        <div class="badge-demo">NEW ARRIVAL</div>
+    </section>
+
+    <section>
+        <h2>8. text-decoration</h2>
+
+        <p class="decoration-none">
+            text-decoration: none - removes underline.
+            Most commonly used on anchor tas to remove their default underline.
+        </p>
+        <p class="decoration-underline">text-decoration: underline - adds an underline</p>
+        <p class="decoration-overline">text-decoration: overline - adds a line above the text</p>
+        <p class="decoration-strikethrough">text-decoration: line-through - strikethrough, 
+            used for crossed-out price like <span class="old-price">₹999</span>₹599
+        </p>
+    </section>
+
+    <section>
+        <h2>9. text-transform</h2>
+
+        <p class="transform-none">text-transform: none - text displays exactly as typed in HTML</p>
+        <p class="transform-uppercase">text-transform: uppercase - forces all letters to UPPERCASE</p>
+        <p class="transform-lowercase">text-transform: lowercase - forces ALL LETTERS to lowercase</p>
+        <p class="transform-capitalize">text-transform: capitalize - capitalizes The First Letter Of Each World</p>
+    </section>
+
+    <section>
+        <h2>10. font shorthand - write everything in one line</h2>
+
+        <p class="font-shorthand-demo">
+            This paragraph uses the font shorthand property - one line sets
+            font-style, font-weight, font-size, line-height, and font-family all at once.
+            This is how professional CSS files reduce repetition.
+        </p>
+    </section>
+
+</body>
+</html>
