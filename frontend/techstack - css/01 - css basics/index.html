@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topic 1 - CSS Basics</title>
+
+    <style>
+
+        h2 {
+            color: darkblue;
+        }
+
+        .internal-style {
+            background-color: lightyellow;
+            font-size: 18px;
+            padding: 10px;
+        }
+    </style>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Topic 1: How CSS Works</h1>
+
+    <p style="color: red; font-size: 20px; font-weight: bold;">
+        This paragraph uses INLINE CSS - the style is written directly on this element.
+    </p>
+    
+    <h2>This heading uses INTERNAL CSS</h2>
+    
+    <p class="internal-style">
+        This paragraph also uses INTERNAL CSS - via a class selector.
+    </p>
+
+    <p class="highlight-box">
+        This paragraph also uses EXTERNAL CSS - its style comes from style.css file.
+    </p>
+
+    <p class="highlight-box fancy-text">
+        This paragraph has TWO classes applied - "highlight-box" and "fancy-text".
+        It gets styles from BOTH classes combined.
+    </p>
+
+    <div id="unique-banner">
+        THis div uses an ID selector - IDs are unique, only ONE element per page should have this.
+    </div>
+</body>
+</html>
